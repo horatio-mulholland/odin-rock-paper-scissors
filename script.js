@@ -77,4 +77,16 @@ function playGame() {
     humanSelection = getHumanChoice();
     computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
+
+    if (humanScore < computerScore) {
+        console.log("You LOST the game. Better luck next time!");
+    } else if (humanScore == computerScore) {
+        console.log("It's a TIE!");
+    } else if (humanScore > computerScore) {
+        console.log("Congratulations! You WON the game!");
+    } else {
+        console.log("I'm not sure how we got here...");
+    }
 }
+
+playGame();
