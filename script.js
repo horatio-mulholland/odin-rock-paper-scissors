@@ -47,7 +47,7 @@ function playGame() {
             console.log("You lose! Scissors beats Paper.");
         } else if (humanChoice == "Scissors" && computerChoice == "Rock") {
             computerScore += 1;
-            console.log("You loose! Rock beats Scissors.");
+            console.log("You lose! Rock beats Scissors.");
         } else if (humanChoice == "Scissors" && computerChoice == "Paper") {
             humanScore += 1;
             console.log("You win! Scissors beats Paper.");
