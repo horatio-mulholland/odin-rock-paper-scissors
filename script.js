@@ -1,4 +1,4 @@
-function GetComputerChoice() {
+function getComputerChoice() {
     const rand_num = 3 * Math.random();
     if (0 <= rand_num && rand_num < 1) {
         return "Rock";
@@ -11,4 +11,17 @@ function GetComputerChoice() {
     }
 }
 
-console.log(GetComputerChoice());
+function getHumanChoice() {
+    let input = prompt();
+    if (input.toLowerCase() == "rock") {
+        return "Rock";
+    } else if (input.toLowerCase() == "paper") {
+        return "Paper";
+    } else if (input.toLowerCase() == "scissors") {
+        return "Scissors"
+    } else {
+        return "That's not an option!";
+    }
+}
+
+console.log(getHumanChoice());
